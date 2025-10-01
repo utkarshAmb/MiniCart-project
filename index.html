@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniStore</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="nav" style="position: sticky; top: 0; width: 100%">
+        <div class="contain" style="background-color: #fff6f4">
+            <div class="level1">
+                <h1>MiniCart</h1>
+            </div>
+            <div class="searchbar">
+                <form action="" method="get" style="flex-basis: 100%">
+                    <input type="search" name="q" id="search-input" placeholder="Search..." />
+                    <button class="search-button" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="level2">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+            </div>
+
+            <div class="level3">
+                <a href="" style="color: black"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style="height: 50px">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+    <div class="maincontainer">
+        <section id="sidebar">
+            <div class="container-fluid ps-0 sidebarlist mx-0" style="border: 1px solid black">
+                <div class="flex-shrink-0 p-3">
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Orders
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
+                                            out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <div id="pro1" class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="./placeholdrer.webp" alt="" height="200px" />
+                <h4 style="display: block; margin: 2%">Product Name</h4>
+                <button type="button" id="view" class="product-button">View</button>
+                <button type="button" id="add" class="product-button">
+                    Add to Cart
+                </button>
+            </div>
+        </section>
+        <section id="cart-area">
+            <div class="cart-area">
+                <h5 style="padding-top: 4%; margin-left: 4%">Your Cart:</h5>
+                <hr />
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
