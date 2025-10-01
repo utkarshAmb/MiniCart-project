@@ -180,7 +180,7 @@ h1{
 #products{
   padding: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-area: 1/2/2/3;
 }
