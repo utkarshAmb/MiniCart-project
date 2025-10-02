@@ -145,9 +145,7 @@ h1{
 }
 
 .product-card{
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  width: fit-content;
   padding: 5px;
   border: 1px solid black;
   border-radius: 5%;
@@ -182,6 +180,7 @@ h1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-area: 1/2/2/3;
+  gap: 10px;
 }
 
 #cart-area{
