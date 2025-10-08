@@ -132,41 +132,37 @@ h1{
   display: inline-block;
   width: 80%;
   border: 1px solid black;
+  border-radius: 1%/20%;
 }
 .search-button{
   display: inline-block;
   background-color: #525FE1;
   border: 1px solid black;
   color: white;
-}
-
-.sidebarlist{
-  max-width: 250px;
+  border-radius: 10%/20%;
+  
 }
 
 .product-card{
   width: fit-content;
   padding: 5px;
   border: 1px solid black;
-  border-radius: 5%;
-  background-color: rgb(229, 229, 229);
+  background-color: #fff5e9;
   height: auto;
   
 }
 
 #view{
-  border-radius: 10%;
   width: 5rem; 
   background-color: #525FE1;
   color: white;
-  
+  border-radius: 10%/20%;
 }
 
 #add{
-  border-radius: 10%;
   background-color: #F86F03;
   color: white;
-  
+  border-radius: 8%/20%;
 }
 .product-button{
   display: inline-block; 
@@ -180,6 +176,9 @@ h1{
   grid-template-rows: 1fr 1fr;
   grid-area: 1/2/2/3;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: url(./unnamed\ \(1\).png); */
 }
 
 #cart-area{
@@ -188,7 +187,13 @@ h1{
 }
 
 .cart-area{
-  background-color: rgba(128, 128, 128, 0.162);
   height: 100%;
-  
+  /* background-image: url(./unnamed.png); */
+}
+
+.custon-font{
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFA41B;
 }

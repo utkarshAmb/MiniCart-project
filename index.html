@@ -15,14 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body style="background-color: #f0f2f2;">
     <section id="nav" style="position: sticky; top: 0; width: 100%; z-index: 1;">
-        <div class="contain" style="background-color: #fff6f4">
+        <div class="contain" style="background-color: rgba(252, 247, 228, 0.9)">
             <div id="logo">
                 <img src="./logo.png" alt="" style="height: 100%" />
             </div>
             <div class="level1">
-                <h1>MiniCart</h1>
+                <h1 style="margin: 5px;">MiniCart</h1>
             </div>
             <div class="searchbar">
                 <form action="" method="get" style="flex-basis: 100%">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section id="products">
+        <section id="products" class="">
             <div id="pro1" class="product-card">
                 <img src="./placeholdrer.webp" alt="" height="200px" />
                 <h4 style="display: block; margin: 2%">Product Name</h4>
@@ -173,12 +173,14 @@
                     Add to Cart
                 </button>
             </div>
-            
+
         </section>
         <section id="cart-area">
-            <div class="cart-area">
-                <h5 style="padding-top: 4%; margin-left: 4%">Your Cart:</h5>
-                <hr />
+            <div style="background-color: white;">
+                <h5 style="padding: 4%; margin-left: 4%; margin-bottom: 0px;" class="custon-font">Your Cart:</h5>
+            </div>
+            <div class="cart-area" style="background-color: white;">
+
             </div>
         </section>
     </div>
