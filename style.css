@@ -212,8 +212,10 @@ h1{
 
 .carousel-control-next-icon {
   filter: invert(50%);
+  margin-left: 65%;
 }
 
 .carousel-control-prev-icon {
   filter: invert(50%);
+  margin-right: 65%;
 }
