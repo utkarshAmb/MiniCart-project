@@ -209,3 +209,11 @@ h1{
     color: #2446ee;
     
 }
+
+.carousel-control-next-icon {
+  filter: invert(50%);
+}
+
+.carousel-control-prev-icon {
+  filter: invert(50%);
+}
