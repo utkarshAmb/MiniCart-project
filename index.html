@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MiniStore</title>
-    <link rel="icon" href="./logo.png" />
+    <!-- <link rel="icon" href="./logo2.png" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
@@ -15,14 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
 </head>
 
-<body style="background-color: #f0f2f2;">
-    <section id="nav" style="position: sticky; top: 0; width: 100%; z-index: 1;">
-        <div class="contain" style="background-color: rgba(252, 247, 228, 0.9)">
+<body style="background-color: #f0f2f2">
+    <section id="nav" style="position: sticky; top: 0; width: 100%; z-index: 1">
+        <div class="contain" style="background-color: rgba(254, 254, 254, 0.9)">
             <div id="logo">
-                <img src="./logo.png" alt="" style="height: 100%" />
+                <img src="./logo2.png" alt="" style="height: 100%" />
             </div>
             <div class="level1">
-                <h1 style="margin: 5px;">MiniCart</h1>
+                <h1 style="margin: 5px">MiniStore</h1>
             </div>
             <div class="searchbar">
                 <form action="" method="get" style="flex-basis: 100%">
@@ -108,80 +108,146 @@
             </div>
         </section>
 
-        <section id="products" class="">
-            <div id="pro1" class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
-            <div class="product-card">
-                <img src="./placeholdrer.webp" alt="" height="200px" />
-                <h4 style="display: block; margin: 2%">Product Name</h4>
-                <button type="button" id="view" class="product-button">View</button>
-                <button type="button" id="add" class="product-button">
-                    Add to Cart
-                </button>
-            </div>
+        <section id="carousel">
+            <div id="myCarousel" class="carousel slide mb-6 h-100" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                        class=""></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="./carousel_item1.png" alt="" srcset="" height="100%" width="100%" />
+                        <div class="container">
+                            <div class="carousel-caption"
+                                style="position: absolute; top: 40%; left: 5%; right: 45%; bottom: 10%;">
 
+                                <p class="opacity-75" style="color: black; font-size: 28px; text-align: left; margin-left: 10%;">
+                                    Built to demonstrate an end-to-end eCommerce website — from product discovery to
+                                    checkout — with a focus on usability and full-stack development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./carousel_item2.png" alt="" srcset="" height="100%" width="100%" />
+                        <div class="container">
+                            <div class="carousel-caption text-center">
+                                <h2>Built using HTML, native CSS, Bootstrap, JavaScript</h2>
+                                <p class="opacity-75" style="color: black">
+                                    A Modern Full-Stack Development Demo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
+                            preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h1>One more for good measure.</h1>
+                                <p>
+                                    Some representative placeholder content for the third slide
+                                    of this carousel.
+                                </p>
+                                <p>
+                                    <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="products">
+                <div id="pro1" class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./placeholdrer.webp" alt="" height="200px" />
+                    <h4 style="display: block; margin: 2%">Product Name</h4>
+                    <button type="button" id="view" class="product-button">View</button>
+                    <button type="button" id="add" class="product-button">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="cart-area">
-            <div style="background-color: white;">
-                <h5 style="padding: 4%; margin-left: 4%; margin-bottom: 0px;" class="custon-font">Your Cart:</h5>
+            <div style="background-color: white">
+                <h5 style="padding: 4%; margin-left: 4%; margin-bottom: 0px" class="custon-font">
+                    Your Cart:
+                </h5>
             </div>
-            <div class="cart-area" style="background-color: white;">
-
-            </div>
+            <div class="cart-area" style="background-color: white"></div>
         </section>
     </div>
 
