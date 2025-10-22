@@ -1,3 +1,11 @@
+.contain{
+display: flex;
+padding-left: 2em;
+height: 4rem;
+justify-content: flex-start;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 #sidebar{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -70,14 +78,6 @@
   align-items: flex-start;
 }
 
-.contain{
-display: flex;
-padding-left: 2em;
-height: 4rem;
-justify-content: flex-start;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 #nav{
   grid-area: 1/1/2/4;
   
@@ -106,7 +106,8 @@ h1{
     font-style: normal;
     padding: 0%;
     margin-bottom: 0%;
-    color: #FFA41B;
+    /* color: #FFA41B; */
+    color: #2446ee;
 }
 
 .level3{
@@ -136,33 +137,39 @@ h1{
 }
 .search-button{
   display: inline-block;
-  background-color: #525FE1;
-  border: 1px solid black;
+  background-color: #2563eb;
   color: white;
   border-radius: 10%/20%;
-  
+  border: none;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
 }
 
 .product-card{
   width: fit-content;
   padding: 5px;
   border: 1px solid black;
-  background-color: #fff5e9;
+  /* background-color: #fff5e9; */
   height: auto;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #view{
   width: 5rem; 
-  background-color: #525FE1;
   color: white;
   border-radius: 10%/20%;
+  border: none;
+  background-color: #2563eb;
+  font-family: inherit;
 }
 
 #add{
-  background-color: #F86F03;
-  color: white;
+  background-color: #9EEB47;
+  color: black;
   border-radius: 8%/20%;
+  border: none;
+  font-family: inherit;
 }
 .product-button{
   display: inline-block; 
@@ -170,14 +177,18 @@ h1{
 }
 
 #products{
+  grid-area: 2/2/3/3;
+  background-color: hwb(215 90% 0%);
+}
+.products{
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-area: 1/2/2/3;
+  padding-left: 10rem;
+  padding-right: 10rem;
   gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  
   /* background-image: url(./unnamed\ \(1\).png); */
 }
 
@@ -195,5 +206,6 @@ h1{
     font-family: "Limelight", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #FFA41B;
+    color: #2446ee;
+    
 }
