@@ -1,0 +1,50 @@
+[
+  {
+    "id": "prod_1",
+    "title": "Wireless Bluetooth Headphones",
+    "image": "./products_images/headphones.avif",
+    "price_cents": 5999
+  },
+  {
+    "id": "prod_2",
+    "title": "Smart Fitness Watch",
+    "image": "./products_images/fitness_watch.webp",
+    "price_cents": 7999
+  },
+  {
+    "id": "prod_3",
+    "title": "Portable Bluetooth Speaker",
+    "image": "./products_images/wireless_speaker_PNG28.png",
+    "price_cents": 4499
+  },
+  {
+    "id": "prod_4",
+    "title": "1080p HD Action Camera",
+    "image": "./products_images/action_cam.avif",
+    "price_cents": 9999
+  },
+  {
+    "id": "prod_5",
+    "title": "Noise-Cancelling Earbuds",
+    "image": "./products_images/earpods.avif",
+    "price_cents": 6999
+  },
+  {
+    "id": "prod_6",
+    "title": "USB-C Fast Charger",
+    "image": "./products_images/charger.webp",
+    "price_cents": 1999
+  },
+  {
+    "id": "prod_7",
+    "title": "Wireless Keyboard & Mouse Combo",
+    "image": "./products_images/m&k.webp",
+    "price_cents": 5499
+  },
+  {
+    "id": "prod_8",
+    "title": "27-inch 4K LED Monitor",
+    "image": "./products_images/tv.webp",
+    "price_cents": 22999
+  }
+]
