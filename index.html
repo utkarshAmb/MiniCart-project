@@ -166,17 +166,19 @@
             </div>
         </section>
 
-        <section id="products">
-            <div class="products">
-                <div id="pro1" class="product-card">
-                    <img src="./products_images/action_cam.avif" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
+        <section id="products" class="products">
+            <template id="product-card-template" >
+                <div id="" class="product-card">
+                    <img class="product-image" src="" alt=""/>
+                    <h4>Product Name</h4>
+                    <h5 class="price">999</h5>
+                    <button type="button"  class="product-button view ">View</button>
+                    <button type="button"  class="product-button add">
                         Add to Cart
                     </button>
-                </div>
-                <div id="pro2" class="product-card">
+                    </div>
+                </template>
+                <!-- <div id="pro2" class="product-card">
                     <img src="./products_images/charger.webp" alt="" height="200px" />
                     <h4 style="display: block; margin: 2%">Product Name</h4>
                     <button type="button" id="view" class="product-button">View</button>
@@ -231,8 +233,8 @@
                     <button type="button" id="add" class="product-button">
                         Add to Cart
                     </button>
-                </div>
-            </div>
+                </div> -->
+            
         </section>
         <section id="cart-area">
             <div style="background-color: white">

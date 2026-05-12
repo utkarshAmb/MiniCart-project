@@ -132,8 +132,9 @@ h1{
 #search-input{
   display: inline-block;
   width: 80%;
-  border: 1px solid black;
+  box-shadow: 0 0 5px;
   border-radius: 1%/20%;
+  border: none;
 }
 .search-button{
   display: inline-block;
@@ -148,14 +149,14 @@ h1{
 .product-card{
   width: fit-content;
   padding: 5px;
-  border: 1px solid black;
-  /* background-color: #fff5e9; */
+  border-radius: 5%;
+  box-shadow: 0 0 5px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-#view{
+.view{
   width: 5rem; 
   color: white;
   border-radius: 10%/20%;
@@ -164,7 +165,7 @@ h1{
   font-family: inherit;
 }
 
-#add{
+.add{
   background-color: #9EEB47;
   color: black;
   border-radius: 8%/20%;
@@ -218,4 +219,14 @@ h1{
 .carousel-control-prev-icon {
   filter: invert(50%);
   margin-right: 65%;
+}
+
+.price{
+  font-size: small;
+  color: grey;
+}
+
+.product-image{
+  width: 100%;
+  border-radius: 5%;
 }
