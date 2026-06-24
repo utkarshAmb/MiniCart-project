@@ -2,254 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiniStore</title>
-    <!-- <link rel="icon" href="./logo2.png" /> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniStore — a full-stack storefront demo</title>
+  <meta name="description"
+    content="MiniStore is a front-end eCommerce demo built with HTML, CSS, Bootstrap, and vanilla JavaScript." />
+  <link rel="icon" href="./logo2.png" />
 
-    <link href="./style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: #f0f2f2">
-    <section id="nav" style="position: sticky; top: 0; width: 100%; z-index: 1">
-        <div class="contain" style="background-color: rgba(254, 254, 254, 0.9)">
-            <div id="logo">
-                <img src="./logo2.png" alt="" style="height: 100%" />
-            </div>
-            <div class="level1">
-                <h1 style="margin: 5px">MiniStore</h1>
-            </div>
-            <div class="searchbar">
-                <form action="" method="get" style="flex-basis: 100%">
-                    <input type="search" name="q" id="search-input" placeholder="Search..." />
-                    <button class="search-button" type="submit">Search</button>
-                </form>
-            </div>
-            <div class="level2">
-                <a href="#">Home</a>
-                <a href="#">Profile</a>
-            </div>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container-xl header-inner">
+      <a class="brand" href="#" aria-label="MiniStore home">
+        <img class="brand-logo" src="./logo2.png" alt="" />
+        <span class="brand-name">MiniStore</span>
+      </a>
 
-            <div class="level3">
-                <a href="" style="color: black"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style="height: 50px">
-                        <path
-                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                    </svg></a>
-            </div>
-        </div>
-    </section>
-    <div class="maincontainer">
-        <section id="sidebar">
-            <div class="container-fluid ps-0 sidebarlist mx-0" style="border: 1px solid black">
-                <div class="flex-shrink-0 p-3">
-                    <ul class="list-unstyled ps-0">
-                        <li class="mb-1">
-                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                                Orders
-                            </button>
-                            <div class="collapse" id="orders-collapse">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="border-top my-3"></li>
-                        <li class="mb-1">
-                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                                Account
-                            </button>
-                            <div class="collapse" id="account-collapse">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
-                                            out</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <form class="search" role="search" id="search-form" autocomplete="off">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input id="search-input" type="search" name="q" placeholder="Search products" aria-label="Search products" />
+      </form>
 
-        <section id="carousel">
-            <div id="myCarousel" class="carousel slide mb-6 h-100" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                        aria-label="Slide 1" aria-current="true"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        class=""></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        class=""></button>
-                </div>
-                <div class="carousel-inner h-100">
-                    <div class="carousel-item active h-100">
-                        <img src="./carousel_item1.png" alt="" srcset="" height="100%" width="100%" />
-                        <div class="container">
-                            <div class="carousel-caption"
-                                style="position: absolute; top: 40%; left: 5%; right: 45%; bottom: 10%;">
-
-                                <p class="opacity-75" style="color: black; font-size: 28px; text-align: left; margin-left: 10%;">
-                                    Built to demonstrate an end-to-end eCommerce website — from product discovery to
-                                    checkout — with a focus on usability and full-stack development.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100">
-                        <img src="./carousel_item2.png" alt="" srcset="" height="100%" width="100%" />
-                        <div class="container">
-                            <div class="carousel-caption text-center">
-                                <h2>Built using HTML, native CSS, Bootstrap, JavaScript</h2>
-                                <p class="opacity-75" style="color: black">
-                                    A Modern Full-Stack Development Demo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100">
-                        <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
-                            preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev btn-primary" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <section id="products" class="products">
-            <template id="product-card-template" >
-                <div id="" class="product-card">
-                    <img class="product-image" src="" alt=""/>
-                    <h4>Product Name</h4>
-                    <h5 class="price">999</h5>
-                    <button type="button"  class="product-button view ">View</button>
-                    <button type="button"  class="product-button add">
-                        Add to Cart
-                    </button>
-                    </div>
-                </template>
-                <!-- <div id="pro2" class="product-card">
-                    <img src="./products_images/charger.webp" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro3" class="product-card">
-                    <img src="./products_images/earpods.avif" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro4" class="product-card">
-                    <img src="./products_images/fitness_watch.webp" alt="" height="200px" width="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro5" class="product-card">
-                    <img src="./products_images/headphones.avif" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro6" class="product-card">
-                    <img src="./products_images/m&k.webp" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro7" class="product-card">
-                    <img src="./products_images/wireless_speaker_PNG28.png" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div>
-                <div id="pro8" class="product-card">
-                    <img src="./placeholdrer.webp" alt="" height="200px" />
-                    <h4 style="display: block; margin: 2%">Product Name</h4>
-                    <button type="button" id="view" class="product-button">View</button>
-                    <button type="button" id="add" class="product-button">
-                        Add to Cart
-                    </button>
-                </div> -->
-            
-        </section>
-        <section id="cart-area">
-            <div style="background-color: white">
-                <h5 style="padding: 4%; margin-left: 4%; margin-bottom: 0px" class="custon-font">
-                    Your Cart:
-                </h5>
-            </div>
-            <div class="cart-area" style="background-color: white"></div>
-        </section>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer"
+          aria-label="Open cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cart-count" hidden>0</span>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+  <!-- ===== Hero carousel ===== -->
+  <section class="hero container-xl">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./carousel_item1.png" alt="Welcome to MiniStore" />
+          <div class="carousel-caption">
+            <h2>An end-to-end storefront demo</h2>
+            <p>From product discovery to checkout, built to show clean UI and full-stack front-end work.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./carousel_item2.png" alt="Built with HTML, CSS, Bootstrap, and JavaScript" />
+          <div class="carousel-caption">
+            <h2>HTML · CSS · Bootstrap · JavaScript</h2>
+            <p>No frameworks — just a hand-built component system and vanilla JavaScript.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== Main: sidebar + catalog ===== -->
+  <main class="container-xl layout">
+    <aside class="sidebar" aria-label="Filters">
+      <h3>Categories</h3>
+      <ul class="filter-list" id="category-list">
+        <!-- populated by JS -->
+      </ul>
+      <hr />
+      <div class="sort-field">
+        <label for="sort-select">Sort by</label>
+        <select id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+    </aside>
+
+    <section class="catalog" aria-label="Products">
+      <div class="catalog-head">
+        <h2 id="catalog-title">All products</h2>
+        <span class="result-count" id="result-count"></span>
+      </div>
+
+      <div class="product-grid" id="products"></div>
+
+      <div class="empty-state" id="no-results" hidden>
+        <h3>No products match your search</h3>
+        <p>Try a different keyword or clear the filters to see everything.</p>
+        <button class="btn-ghost" type="button" id="clear-filters">Clear filters</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container-xl footer-inner">
+      <span class="brand-name">MiniStore</span>
+      <span>Front-end eCommerce demo · HTML, CSS, Bootstrap &amp; vanilla JavaScript</span>
+    </div>
+  </footer>
+
+  <!-- ===== Cart drawer ===== -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cartDrawerLabel">Your cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <div class="cart-body" id="cart-lines"><!-- populated by JS --></div>
+      <div class="cart-foot" id="cart-foot" hidden>
+        <div class="cart-summary">
+          <span class="label">Total</span>
+          <span class="total" id="cart-total">$0.00</span>
+        </div>
+        <button class="btn-solid btn-block" type="button" id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Product detail modal ===== -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content position-relative">
+        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-grid">
+          <div class="modal-media">
+            <img id="modal-image" src="" alt="" />
+          </div>
+          <div class="modal-info">
+            <span class="product-tag" id="modal-category"></span>
+            <h3 id="modal-title"></h3>
+            <div class="price" id="modal-price"></div>
+            <p id="modal-description"></p>
+            <button class="btn-add btn-block" type="button" id="modal-add">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Product card template ===== -->
+  <template id="product-card-template">
+    <article class="product-card">
+      <div class="product-media">
+        <span class="product-tag"></span>
+        <img class="product-image" src="" alt="" loading="lazy" />
+      </div>
+      <div class="product-body">
+        <h3 class="product-title"></h3>
+        <div class="product-price"></div>
+        <div class="product-actions">
+          <button type="button" class="btn-ghost btn-view">View</button>
+          <button type="button" class="btn-add btn-add-trigger">Add to cart</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

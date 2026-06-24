@@ -3,48 +3,64 @@
     "id": "prod_1",
     "title": "Wireless Bluetooth Headphones",
     "image": "./products_images/headphones.avif",
-    "price_cents": 5999
+    "price_cents": 5999,
+    "category": "Audio",
+    "description": "Over-ear headphones with Bluetooth 5.3, up to 30 hours of battery, and a foldable design for travel."
   },
   {
     "id": "prod_2",
     "title": "Smart Fitness Watch",
     "image": "./products_images/fitness_watch.webp",
-    "price_cents": 7999
+    "price_cents": 7999,
+    "category": "Wearables",
+    "description": "Tracks heart rate, sleep, and workouts on a bright always-on display. Water resistant to 50m."
   },
   {
     "id": "prod_3",
     "title": "Portable Bluetooth Speaker",
     "image": "./products_images/wireless_speaker_PNG28.png",
-    "price_cents": 4499
+    "price_cents": 4499,
+    "category": "Audio",
+    "description": "Pocket-sized speaker with 360-degree sound, an IPX7 waterproof shell, and 12 hours of playback."
   },
   {
     "id": "prod_4",
     "title": "1080p HD Action Camera",
     "image": "./products_images/action_cam.avif",
-    "price_cents": 9999
+    "price_cents": 9999,
+    "category": "Cameras",
+    "description": "Compact action camera with image stabilisation, a waterproof case, and mounts for any rig."
   },
   {
     "id": "prod_5",
     "title": "Noise-Cancelling Earbuds",
     "image": "./products_images/earpods.avif",
-    "price_cents": 6999
+    "price_cents": 6999,
+    "category": "Audio",
+    "description": "True wireless earbuds with active noise cancellation and a USB-C charging case."
   },
   {
     "id": "prod_6",
     "title": "USB-C Fast Charger",
     "image": "./products_images/charger.webp",
-    "price_cents": 1999
+    "price_cents": 1999,
+    "category": "Accessories",
+    "description": "65W GaN charger that powers phones and laptops, with two USB-C ports and one USB-A."
   },
   {
     "id": "prod_7",
     "title": "Wireless Keyboard & Mouse Combo",
     "image": "./products_images/m&k.webp",
-    "price_cents": 5499
+    "price_cents": 5499,
+    "category": "Accessories",
+    "description": "Low-profile keyboard and silent mouse on a single USB receiver, with months of battery life."
   },
   {
     "id": "prod_8",
     "title": "27-inch 4K LED Monitor",
     "image": "./products_images/tv.webp",
-    "price_cents": 22999
+    "price_cents": 22999,
+    "category": "Displays",
+    "description": "27-inch 4K display with slim bezels, 99% sRGB colour, and both HDMI and USB-C inputs."
   }
 ]
